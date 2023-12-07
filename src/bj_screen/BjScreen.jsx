@@ -23,7 +23,6 @@ export function BjScreen() {
   return (
     <>
       <img src={reactLogo} alt="reactLogo"/>
-
       bj screen
     </>
   )

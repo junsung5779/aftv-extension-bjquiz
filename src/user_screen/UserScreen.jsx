@@ -1,4 +1,5 @@
 import {useEffect} from "react";
+import reactLogo from '/src/assets/react.svg';
 
 export function UserScreen() {
 
@@ -21,6 +22,7 @@ export function UserScreen() {
 
   return (
     <>
+    <img src={reactLogo} alt="reactLogo"/>
       user screen
     </>
   )
