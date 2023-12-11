@@ -1,8 +1,7 @@
-import {useEffect} from "react";
-import reactLogo from '/src/assets/react.svg';
+import { useEffect } from "react";
+import reactLogo from "/src/assets/react.svg";
 
 export function UserScreen() {
-
   useEffect(() => {
     if (typeof window.extensionSDK === "undefined") {
       window.extensionSDK = window.AFREECA.ext();
@@ -21,9 +20,11 @@ export function UserScreen() {
   }, []);
 
   return (
-    <>
-    <img src={reactLogo} alt="reactLogo"/>
-      user screen
-    </>
-  )
+    <div>
+      <img src={reactLogo} alt="reactLogo" />
+      <p>user screen 입니다.</p>
+      <h3>내가 지금 먹고싶은 과일은?</h3>
+      <input />
+    </div>
+  );
 }

@@ -1,8 +1,6 @@
-import reactLogo from '/src/assets/react.svg';
-import {useEffect} from "react";
+import { useEffect } from "react";
 
 export function BjScreen() {
-
   useEffect(() => {
     if (typeof window.extensionSDK === "undefined") {
       window.extensionSDK = window.AFREECA.ext();
@@ -21,9 +19,15 @@ export function BjScreen() {
   }, []);
 
   return (
-    <>
-      <img src={reactLogo} alt="reactLogo"/>
-      bj screen
-    </>
-  )
+    <div>
+      <p>bj screen 입니다.</p>
+      <h2>퀴즈를 입력하세요</h2>
+      <div>
+        <p>문제를 입력하세요(20자 이내)</p>
+        <input />
+        <p>정답을 입력하세요(20자 이내)</p>
+        <input />
+      </div>
+    </div>
+  );
 }
